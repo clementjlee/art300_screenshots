@@ -1,0 +1,374 @@
+body {
+    font-family: sans-serif;
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+  }
+
+.one {
+    width: 100vw;
+    height: 100px;
+    top: 0;
+    left: 0;
+}
+
+.navigate{
+    height: 80px;
+    background-color: white;
+}
+
+.two {
+    background-color: maroon;
+    height: 350px;
+    margin-top: 10px;
+    display: grid;
+
+    display: grid;
+    grid-template-areas:
+      "blank textie textie image image"
+      "blank button button image image";
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+    margin-bottom: 10px;
+    min-height: 10px;
+}
+
+    .two-blankone{
+        background-color: maroon;
+        grid-area: blank;
+    }
+
+    .two-image{
+        background-color: skyblue;
+        grid-area: image;
+    }
+
+    .two-description{
+        background-color: tan;
+        grid-area: textie;
+    }
+
+    .two-interactone{
+        background-color: red;
+        grid-area: button;
+    }
+
+.three{
+    background-color: navy;
+    height: 350px;
+    margin-top: 10px;
+    display: grid;
+
+    display: grid;
+    grid-template-areas:
+      "blank image image textie textie"
+      "blank image image button button";
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+    margin-bottom: 10px;
+    min-height: 10px;
+}
+
+    .three-blank{
+        background-color: navy;
+        grid-area: blank;
+    }
+
+    .three-image{
+        background-color: skyblue;
+        grid-area: image;
+    }
+
+    .three-description{
+        background-color: tan;
+        grid-area: textie;
+    }
+
+    .three-interactone{
+        background-color: red;
+        grid-area: button;
+    }
+
+.four{
+    background-color: maroon;
+    height: 350px;
+    margin-top: 10px;
+    display: grid;
+
+    display: grid;
+    grid-template-areas:
+      "blank textie textie image image"
+      "blank button button image image";
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+    margin-bottom: 0px;
+    min-height: 10px;
+}
+
+    .four-blank{
+        background-color: maroon;
+        grid-area: blank;
+    }
+
+    .four-imageone{
+        background-color: skyblue;
+        grid-area: image;
+    }
+
+    .four-text{
+        background-color: tan;
+        grid-area: textie;
+    }
+
+    .four-interact{
+        background-color: red;
+        grid-area: button;
+    }
+
+.five{
+    background-color: maroon;
+    height: 350px;
+    margin-top: 0px;
+    display: grid;
+
+    display: grid;
+    grid-template-areas:
+        "blank blank blank textie textie"
+        "blank blank blank button button";
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+    margin-bottom: 0px;
+    min-height: 10px;
+}
+    .five-blank{
+        background-color: maroon;
+        grid-area: blank;
+    }
+
+    .five-text{
+        background-color: tan;
+        grid-area: textie;
+    }
+
+    .five-interact{
+        background-color: red;
+        grid-area: button;
+    }
+
+.six{
+    background-color: maroon;
+    height: 350px;
+    margin-top: 0px;
+    display: grid;
+
+    display: grid;
+    grid-template-areas:
+    "blank image image textie textie"
+    "blank image image button button";
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+    margin-bottom: 10px;
+    min-height: 10px;
+}
+
+    .six-blank{
+        background-color: maroon;
+        grid-area: blank;
+    }
+
+    .six-image{
+        background-color: skyblue;
+        grid-area: image;
+    }
+
+    .six-text{
+        background-color: tan;
+        grid-area: textie;
+    }
+
+    .six-interact{
+        background-color: red;
+        grid-area: button;
+    }
+
+.seven{
+    background-color: navy;
+    height: 350px;
+    margin-top: 10px;
+    display: grid;
+
+    display: grid;
+    grid-template-areas:
+        "blank image image textie textie"
+        "blank image image button button";
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+    margin-bottom: 10px;
+    min-height: 10px;
+}
+
+    .seven-blank{
+        background-color: navy;
+        grid-area: blank;
+    }
+
+    .seven-image{
+        background-color: skyblue;
+        grid-area: image;
+    }
+
+    .seven-text{
+        background-color: tan;
+        grid-area: textie;
+    }
+
+    .seven-interact{
+        background-color: red;
+        grid-area: button;
+    }
+
+    .eight{
+        background-color: maroon;
+        height: 350px;
+        margin-top: 10px;
+        display: grid;
+    
+        display: grid;
+        grid-template-areas:
+            "blank textie textie textie"
+            "blank image image image";
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(5, 1fr);
+        margin-bottom: 10px;
+        min-height: 10px;
+    }
+    
+        .eight-blank{
+            background-color: maroon;
+            grid-area: blank;
+        }
+    
+        .eight-image{
+            background-color: skyblue;
+            grid-area: image;
+        }
+    
+        .eight-text{
+            background-color: tan;
+            grid-area: textie;
+        }
+
+.nine{
+    background-color: maroon;
+    height: 350px;
+    margin-top: 10px;
+    display: grid;
+
+    display: grid;
+    grid-template-areas:
+        "blank textie textie textie"
+        "blank textie textie textie";
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+    margin-bottom: 10px;
+    min-height: 10px;
+}
+
+    .nine-blank{
+        background-color: maroon;
+        grid-area: blank;
+    }
+
+    .nine-text{
+        background-color: tan;
+        grid-area: textie;
+    }
+
+.ten{
+    background-color: navy;
+    height: 350px;
+    margin-top: 10px;
+    display: grid;
+
+    display: grid;
+    grid-template-areas:
+        "blank textie textie textie"
+        "blank button button button";
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+    margin-bottom: 10px;
+    min-height: 10px;
+}
+
+    .ten-blank{
+        background-color:navy;
+        grid-area: blank;
+    }
+
+    .ten-text{
+        background-color: tan;
+        grid-area: textie;
+    }
+
+    .ten-interact{
+        background-color: red;
+        grid-area: button;
+    }
+
+.eleven{
+    background-color: white;
+    height: 300px;
+    display: grid;
+    grid-gap: 10px;
+   
+    grid-template-areas:
+        "bottom bottom bottom bottom bottom bottom";
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(7, 1fr);
+    margin: auto;
+    padding: 20px;
+}
+
+.eleven-blank{
+    background-color: white;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+    .eleven-one{
+        background-color: salmon;
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+
+    .eleven-two{
+        background-color: salmon;
+        grid-column-start: 3;
+        grid-column-end: 4;
+    }
+
+    .eleven-three{
+        background-color: salmon;
+        grid-column-start: 4;
+        grid-column-end: 5;
+    }
+
+    .eleven-four{
+        background-color: salmon;
+        grid-column-start: 5;
+        grid-column-end: 6;
+    }
+
+    .eleven-five{
+        background-color: salmon;
+        grid-column-start: 6;
+        grid-column-end: 7;
+    }
+
+    .eleven-text{
+        background-color: tan;
+        grid-area: bottom;
+        grid-column-start: 2;
+        grid-column-end: 7;
+        grid-row-start: 2;
+        grid-row-end: 2;
+    }

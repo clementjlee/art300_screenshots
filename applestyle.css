@@ -1,0 +1,117 @@
+body {
+    font-family: sans-serif;
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+  }
+
+.header {
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.header-top{
+    height: 30px;
+    background-color: white;
+}
+
+.header-bottom {
+    height: 50px;
+    background-color: maroon;
+}
+
+.iphone-top {
+    background-color: navy;
+    height: 550px;
+    margin-top: 10px;
+    display: grid;
+}
+
+.iphone-middle {
+    background-color: maroon;
+    height: 500px;
+    margin-top: 10px;
+    display: grid;
+}
+
+.iphone-bottom {
+    background-color: navy;
+    height: 500px;
+    margin-top: 10px;
+    display: grid;
+}
+
+.accessories {
+    background-color:white;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    min-height: 1000px;
+  
+    margin: auto;
+    padding: 10px;
+  }
+
+.accessories-item{
+    background-color:skyblue;
+}
+
+.bottom{
+    background-color: white;
+    height: 300px;
+    display: grid;
+    grid-gap: 10px;
+   
+    grid-template-areas:
+        "bottom bottom bottom bottom bottom bottom";
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(7, 1fr);
+    margin: auto;
+    padding: 20px;
+}
+
+    .other-blank{
+        background-color: white;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    .other-one{
+        background-color: salmon;
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+
+    .other-two{
+        background-color: salmon;
+        grid-column-start: 3;
+        grid-column-end: 4;
+    }
+
+    .other-three{
+        background-color: salmon;
+        grid-column-start: 4;
+        grid-column-end: 5;
+    }
+
+    .other-four{
+        background-color: salmon;
+        grid-column-start: 5;
+        grid-column-end: 6;
+    }
+
+    .other-five{
+        background-color: salmon;
+        grid-column-start: 6;
+        grid-column-end: 7;
+    }
+
+    .bottom-description{
+        background-color: tan;
+        grid-area: bottom;
+        grid-column-start: 2;
+        grid-column-end: 7;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }

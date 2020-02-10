@@ -1,0 +1,226 @@
+body {
+    font-family: sans-serif;
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+  }
+
+.one{
+    height: 80px;
+    background-color: maroon;
+
+    display: grid;
+    grid-template-columns: repeat (5, 1fr);
+}
+
+.two{
+    background-color: navy;
+    height: 350px;
+    margin-top: 10px;
+    display: grid;
+
+    grid-template-areas:
+        "image image image textie textie"
+        "image image image button button";
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+    min-height: 10px;
+    }
+
+    .two-image{
+        background-color: skyblue;
+        grid-area: image;
+    }
+
+    .two-text{
+        background-color: tan;
+        grid-area: textie;
+    }
+
+    .two-interact{
+        background-color: red;
+        grid-area: button;
+    }
+
+.three{
+    background-color: navy;
+    height: 300px;
+    display: grid;
+    grid-gap: 10px;
+    
+    grid-template-areas:
+        "bottom bottom bottom bottom bottom bottom";
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    margin: auto;
+    padding: 20px;
+}
+
+    .section-one{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+
+        display: grid;
+        grid-template-areas:
+        "comment comment"
+        "content content"
+        "commenttwo commenttwo"
+        "button button";
+        grid-template-rows: 30px 100px 30px 30px;
+        grid-template-columns: 2fr;
+        min-height: 150px;
+    }
+
+    .section-one-text-one{
+        background-color: tan;
+        grid-area: comment;
+    }
+
+    .section-one-text-two{
+        background-color: tan;
+        grid-area: commenttwo;
+    }
+
+    .section-one-image{
+        background-color: skyblue;
+        grid-area: content;
+    }
+
+    .section-one-interact{
+        background-color: red;
+        grid-area: button;
+    }
+
+    .section-two{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+
+        display: grid;
+        grid-template-areas:
+        "comment comment"
+        "content content"
+        "commenttwo commenttwo"
+        "button button";
+        grid-template-rows: 30px 100px 30px 30px;
+        grid-template-columns: 2fr;
+        min-height: 150px;
+    }
+
+    .section-two-text-one{
+        background-color: tan;
+        grid-area: comment;
+    }
+
+    .section-two-text-two{
+        background-color: tan;
+        grid-area: commenttwo;
+    }
+
+    .section-two-image{
+        background-color: skyblue;
+        grid-area: content;
+    }
+
+    .section-two-interact{
+        background-color: red;
+        grid-area: button;
+    }
+
+    .section-three{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3;
+
+        display: grid;
+        grid-template-areas:
+        "comment comment"
+        "content content"
+        "commenttwo commenttwo"
+        "button button";
+        grid-template-rows: 30px 100px 30px 30px;
+        grid-template-columns: 2fr;
+        min-height: 150px;
+    }
+
+    .section-three-text-one{
+        background-color: tan;
+        grid-area: comment;
+    }
+
+    .section-three-text-two{
+        background-color: tan;
+        grid-area: commenttwo;
+    }
+
+    .section-three-image{
+        background-color: skyblue;
+        grid-area: content;
+    }
+
+    .section-three-interact{
+        background-color: red;
+        grid-area: button;
+    }
+
+.interact{
+    background-color: white;
+    height: 300px;
+    display: grid;
+    grid-gap: 10px;
+   
+    grid-template-areas:
+        "bottom bottom bottom bottom bottom bottom";
+    grid-template-rows: repeat(2, 300px 50px);
+    grid-template-columns: repeat(7, 1fr);
+    margin: auto;
+    padding: 20px;
+}
+
+    .interact-blank{
+        background-color: white;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    .interact-one{
+        background-color: red;
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+
+    .interact-two{
+        background-color: red;
+        grid-column-start: 3;
+        grid-column-end: 4;
+    }
+
+    .interact-three{
+        background-color: red;
+        grid-column-start: 4;
+        grid-column-end: 5;
+    }
+
+    .interact-four{
+        background-color: red;
+        grid-column-start: 5;
+        grid-column-end: 6;
+    }
+
+    .interact-five{
+        background-color: red;
+        grid-column-start: 6;
+        grid-column-end: 7;
+    }
+
+    .interact-six-row{
+        background-color: red;
+        grid-area: bottom;
+        grid-column-start: 1;
+        grid-column-end: 8;
+        grid-row-start: 2;
+        grid-row-end: 2;
+    }

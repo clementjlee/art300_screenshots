@@ -1,0 +1,738 @@
+body {
+    font-family: sans-serif;
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+  }
+
+.header{
+    height: 80px;
+    background-color: navy;
+}
+
+.one {
+    background-color: maroon;
+    height: 350px;
+    
+    display: grid;
+    grid-template-areas:
+    "blank blank blank blank blank blank";
+    grid-template-rows: repeat(7, 1fr);
+    grid-template-columns: repeat(7, 1fr);
+    margin-bottom: 10px;
+    min-height: 10px;
+}
+
+    .one-blank{
+        background-color: maroon;
+        grid-area: blank;
+        grid-column-start: 1;
+        grid-column-start: 5;
+        grid-row-start: 1;
+        grid-row-start: 6;
+    }
+    .one-interact{
+        background-color: red;
+        grid-area: button;
+        grid-column-start: 5;
+        grid-column-start: 7;
+        grid-row-start: 6;
+        grid-row-start: 7;
+    }
+
+.two{
+    background-color: navy;
+    height: 350px;
+    margin-top: 10px;
+    display: grid;
+
+    grid-template-areas:
+        "blank image image textie textie"
+        "blank image image button button";
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+    margin-bottom: 10px;
+    min-height: 10px;
+    }
+
+    .two-blank{
+        background-color: navy;
+        grid-area: blank;
+    }
+
+    .two-image{
+        background-color: skyblue;
+        grid-area: image;
+    }
+
+    .two-description{
+        background-color: tan;
+        grid-area: textie;
+    }
+
+    .two-interactone{
+        background-color: red;
+        grid-area: button;
+    }
+
+.three {
+    background-color: maroon;
+    height: 350px;
+    
+    display: grid;
+    grid-template-areas:
+    "blank blank blank blank blank blank";
+    grid-template-rows: repeat(7, 1fr);
+    grid-template-columns: repeat(7, 1fr);
+    margin-bottom: 10px;
+    min-height: 10px;
+}
+
+    .three-blank{
+        background-color: maroon;
+        grid-area: blank;
+        grid-column-start: 1;
+        grid-column-start: 5;
+        grid-row-start: 1;
+        grid-row-start: 6;
+    }
+    .three-interact{
+        background-color: red;
+        grid-area: button;
+        grid-column-start: 5;
+        grid-column-start: 7;
+        grid-row-start: 6;
+        grid-row-start: 7;
+    }
+
+.four{
+    background-color: navy;
+    height: 700px;
+    display: grid;
+    grid-gap: 10px;
+    
+    grid-template-areas:
+        "bottom bottom bottom bottom bottom bottom";
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+    margin: auto;
+    padding: 20px;
+}
+    .four-toptext{
+        background-color: tan;
+        grid-column-start: 2;
+        grid-column-end: 6;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    .four-bottomtext{
+        background-color: tan;
+        grid-column-start: 2;
+        grid-column-end: 6;
+        grid-row-start: 6;
+        grid-row-end: 8;
+    }
+
+    .four-one{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+
+        display: grid;
+        grid-template-areas:
+          "content content"
+          "comment comment";
+        grid-template-rows: 1fr 30px;
+        grid-template-columns: 30px 1fr;
+        min-height: 150px;
+    }
+
+    .four-one-image{
+        background-color: skyblue;
+        grid-area: content;
+    }
+
+    .four-one-text{
+        background-color: tan;
+        grid-area: comment;
+    }
+
+    .four-two{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3;
+
+        display: grid;
+        grid-template-areas:
+          "content content"
+          "comment comment";
+        grid-template-rows: 1fr 30px;
+        grid-template-columns: 30px 1fr;
+        min-height: 150px;
+    }
+
+    .four-two-image{
+        background-color: skyblue;
+        grid-area: content;
+    }
+
+    .four-two-text{
+        background-color: tan;
+        grid-area: comment;
+    }
+
+    .four-three{
+        grid-column-start: 4;
+        grid-column-end: 5;
+        grid-row-start: 2;
+        grid-row-end: 3;
+
+        display: grid;
+        grid-template-areas:
+          "content content"
+          "comment comment";
+        grid-template-rows: 1fr 30px;
+        grid-template-columns: 30px 1fr;
+        min-height: 150px;
+    }
+
+    .four-three-image{
+        background-color: skyblue;
+        grid-area: content;
+    }
+
+    .four-three-text{
+        background-color: tan;
+        grid-area: comment;
+    }
+
+    .four-four{
+        grid-column-start: 5;
+        grid-column-end: 6;
+        grid-row-start: 2;
+        grid-row-end: 3;
+
+        display: grid;
+        grid-template-areas:
+          "content content"
+          "comment comment";
+        grid-template-rows: 1fr 30px;
+        grid-template-columns: 30px 1fr;
+        min-height: 150px;
+    }
+
+    .four-four-image{
+        background-color: skyblue;
+        grid-area: content;
+    }
+
+    .four-four-text{
+        background-color: tan;
+        grid-area: comment;
+    }
+
+    .four-five{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
+
+        display: grid;
+        grid-template-areas:
+          "content content"
+          "comment comment";
+        grid-template-rows: 1fr 30px;
+        grid-template-columns: 30px 1fr;
+        min-height: 150px;
+    }
+
+    .four-five-image{
+        background-color: skyblue;
+        grid-area: content;
+    }
+
+    .four-five-text{
+        background-color: tan;
+        grid-area: comment;
+    }
+
+    .four-six{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        grid-row-end: 4;
+
+        display: grid;
+        grid-template-areas:
+          "content content"
+          "comment comment";
+        grid-template-rows: 1fr 30px;
+        grid-template-columns: 30px 1fr;
+        min-height: 150px;
+    }
+
+    .four-six-image{
+        background-color: skyblue;
+        grid-area: content;
+    }
+
+    .four-six-text{
+        background-color: tan;
+        grid-area: comment;
+    } 
+
+    .four-seven{
+        grid-column-start: 4;
+        grid-column-end: 5;
+        grid-row-start: 3;
+        grid-row-end: 4;
+
+        display: grid;
+        grid-template-areas:
+          "content content"
+          "comment comment";
+        grid-template-rows: 1fr 30px;
+        grid-template-columns: 30px 1fr;
+        min-height: 150px;
+    }
+
+    .four-seven-image{
+        background-color: skyblue;
+        grid-area: content;
+    }
+
+    .four-seven-text{
+        background-color: tan;
+        grid-area: comment;
+    } 
+
+    .four-eight{
+        grid-column-start: 5;
+        grid-column-end: 6;
+        grid-row-start: 3;
+        grid-row-end: 4;
+
+        display: grid;
+        grid-template-areas:
+          "content content"
+          "comment comment";
+        grid-template-rows: 1fr 30px;
+        grid-template-columns: 30px 1fr;
+        min-height: 150px;
+    }
+
+    .four-eight-image{
+        background-color: skyblue;
+        grid-area: content;
+    }
+
+    .four-eight-text{
+        background-color: tan;
+        grid-area: comment;
+    } 
+
+    .four-nine{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 4;
+        grid-row-end: 5;
+
+        display: grid;
+        grid-template-areas:
+          "content content"
+          "comment comment";
+        grid-template-rows: 1fr 30px;
+        grid-template-columns: 30px 1fr;
+        min-height: 150px;
+    }
+
+    .four-nine-image{
+        background-color: skyblue;
+        grid-area: content;
+    }
+
+    .four-nine-text{
+        background-color: tan;
+        grid-area: comment;
+    }
+
+    .four-ten{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 4;
+        grid-row-end: 5;
+
+        display: grid;
+        grid-template-areas:
+          "content content"
+          "comment comment";
+        grid-template-rows: 1fr 30px;
+        grid-template-columns: 30px 1fr;
+        min-height: 150px;
+    }
+
+    .four-ten-image{
+        background-color: skyblue;
+        grid-area: content;
+    }
+
+    .four-ten-text{
+        background-color: tan;
+        grid-area: comment;
+    }
+
+    .four-eleven{
+        grid-column-start: 4;
+        grid-column-end: 5;
+        grid-row-start: 4;
+        grid-row-end: 5;
+
+        display: grid;
+        grid-template-areas:
+          "content content"
+          "comment comment";
+        grid-template-rows: 1fr 30px;
+        grid-template-columns: 30px 1fr;
+        min-height: 150px;
+    }
+
+    .four-eleven-image{
+        background-color: skyblue;
+        grid-area: content;
+    }
+
+    .four-eleven-text{
+        background-color: tan;
+        grid-area: comment;
+    }
+
+    .four-twelve{
+        grid-column-start: 5;
+        grid-column-end: 6;
+        grid-row-start: 4;
+        grid-row-end: 5;
+
+        display: grid;
+        grid-template-areas:
+          "content content"
+          "comment comment";
+        grid-template-rows: 1fr 30px;
+        grid-template-columns: 30px 1fr;
+        min-height: 150px;
+    }
+
+    .four-twelve-image{
+        background-color: skyblue;
+        grid-area: content;
+    }
+
+    .four-twelve-text{
+        background-color: tan;
+        grid-area: comment;
+    }
+
+.five {
+    background-color: maroon;
+    height: 350px;
+    
+    display: grid;
+    grid-template-areas:
+    "blank blank blank blank blank blank";
+    grid-template-rows: repeat(7, 1fr);
+    grid-template-columns: repeat(7, 1fr);
+    margin-bottom: 10px;
+    min-height: 10px;
+}
+
+    .five-blank{
+        background-color: maroon;
+        grid-area: blank;
+        grid-column-start: 1;
+        grid-column-start: 5;
+        grid-row-start: 1;
+        grid-row-start: 6;
+    }
+    .five-interact{
+        background-color: red;
+        grid-area: button;
+        grid-column-start: 5;
+        grid-column-start: 7;
+        grid-row-start: 6;
+        grid-row-start: 7;
+    }
+
+.six{
+    background-color: navy;
+    height: 350px;
+    display: grid;
+    grid-gap: 10px;
+    
+    grid-template-areas:
+        "bottom bottom bottom bottom bottom bottom";
+    grid-template-rows: repeat(2, 50px 300px);
+    grid-template-columns: repeat(5, 1fr);
+    margin: auto;
+    padding: 20px;
+}
+    .six-toptext{
+        background-color: tan;
+        grid-column-start: 2;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    .six-one{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+
+        display: grid;
+        grid-template-areas:
+          "content content"
+          "button button";
+        grid-template-rows: 1fr 30px;
+        grid-template-columns: 30px 1fr;
+        min-height: 150px;
+    }
+
+    .six-one-image{
+        background-color: skyblue;
+        grid-area: content;
+    }
+
+    .six-one-interact{
+        background-color: red;
+        grid-area: button;
+    }
+
+    .six-two{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3;
+
+        display: grid;
+        grid-template-areas:
+          "content content"
+          "button button";
+        grid-template-rows: 1fr 30px;
+        grid-template-columns: 30px 1fr;
+        min-height: 150px;
+    }
+
+    .six-two-image{
+        background-color: skyblue;
+        grid-area: content;
+    }
+
+    .six-two-interact{
+        background-color: red;
+        grid-area: button;
+    }
+
+    .six-three{
+        grid-column-start: 4;
+        grid-column-end: 5;
+        grid-row-start: 2;
+        grid-row-end: 3;
+
+        display: grid;
+        grid-template-areas:
+          "content content"
+          "button button";
+        grid-template-rows: 1fr 30px;
+        grid-template-columns: 30px 1fr;
+        min-height: 150px;
+    }
+
+    .six-three-image{
+        background-color: skyblue;
+        grid-area: content;
+    }
+
+    .six-three-interact{
+        background-color: red;
+        grid-area: button;
+    }
+
+.seven {
+    background-color: maroon;
+    height: 350px;
+    
+    display: grid;
+    grid-template-areas:
+    "blank blank blank blank blank blank";
+    grid-template-rows: repeat(7, 1fr);
+    grid-template-columns: repeat(7, 1fr);
+    margin-bottom: 10px;
+    min-height: 10px;
+}
+
+    .seven-blank{
+        background-color: maroon;
+        grid-area: blank;
+        grid-column-start: 1;
+        grid-column-start: 5;
+        grid-row-start: 1;
+        grid-row-start: 6;
+    }
+    .seven-interact{
+        background-color: red;
+        grid-area: button;
+        grid-column-start: 5;
+        grid-column-start: 7;
+        grid-row-start: 6;
+        grid-row-start: 7;
+    }
+
+.eight{
+    background-color: navy;
+    height: 350px;
+    display: grid;
+    grid-gap: 10px;
+    
+    grid-template-areas:
+        "bottom bottom bottom bottom bottom bottom";
+    grid-template-rows: repeat(2, 50px 300px);
+    grid-template-columns: repeat(5, 1fr);
+    margin: auto;
+    padding: 20px;
+}
+    .eight-toptext{
+        background-color: tan;
+        grid-column-start: 2;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    .eight-one{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+
+        display: grid;
+        grid-template-areas:
+            "content content"
+            "button button";
+        grid-template-rows: 1fr 30px;
+        grid-template-columns: 30px 1fr;
+        min-height: 150px;
+    }
+
+    .eight-one-image{
+        background-color: skyblue;
+        grid-area: content;
+    }
+
+    .eight-one-interact{
+        background-color: red;
+        grid-area: button;
+    }
+
+    .eight-two{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3;
+
+        display: grid;
+        grid-template-areas:
+            "content content"
+            "button button";
+        grid-template-rows: 1fr 30px;
+        grid-template-columns: 30px 1fr;
+        min-height: 150px;
+    }
+
+    .eight-two-image{
+        background-color: skyblue;
+        grid-area: content;
+    }
+
+    .eight-two-interact{
+        background-color: red;
+        grid-area: button;
+    }
+
+    .eight-three{
+        grid-column-start: 4;
+        grid-column-end: 5;
+        grid-row-start: 2;
+        grid-row-end: 3;
+
+        display: grid;
+        grid-template-areas:
+            "content content"
+            "button button";
+        grid-template-rows: 1fr 30px;
+        grid-template-columns: 30px 1fr;
+        min-height: 150px;
+    }
+
+    .eight-three-image{
+        background-color: skyblue;
+        grid-area: content;
+    }
+
+    .eight-three-interact{
+        background-color: red;
+        grid-area: button;
+    }
+
+.nine {
+    background-color: maroon;
+    height: 350px;
+    
+    display: grid;
+    grid-template-areas:
+    "blank blank blank blank blank blank";
+    grid-template-rows: repeat(7, 1fr);
+    grid-template-columns: repeat(7, 1fr);
+    margin-bottom: 10px;
+    min-height: 10px;
+}
+
+    .nine-blank{
+        background-color: maroon;
+        grid-area: blank;
+        grid-column-start: 1;
+        grid-column-start: 5;
+        grid-row-start: 1;
+        grid-row-start: 6;
+    }
+    .nine-interact{
+        background-color: red;
+        grid-area: button;
+        grid-column-start: 5;
+        grid-column-start: 7;
+        grid-row-start: 6;
+        grid-row-start: 7;
+    }
+
+.ten {
+    background-color: white;
+    height: 350px;
+    
+    display: grid;
+    grid-template-areas:
+    "blank blank blank blank blank blank";
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    margin-bottom: 10px;
+    min-height: 10px;
+}
+    .ten-description{
+        background-color: red;
+
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 1;
+    }
